@@ -1,0 +1,350 @@
+html,body {
+	position:relative;
+	height:100%;
+}
+
+body {
+	background: black;
+	color:#fff;
+	margin:0;
+	padding:0;
+	font-size: 40px;
+	font-weight: bold;
+	text-shadow: 1px 1px 5px black;
+}
+
+.big-title {
+	font-size: 70px;
+}
+
+.hr-dotted {
+    margin-top: 2rem;
+    border-top: 4px dotted rgba(255, 255, 255, 0.8);
+}
+
+ul.list > li{
+	font-size: 0.7em;
+	text-align: left;
+}
+
+.table td, .table th{
+    font-size: 0.7em;
+    font-weight: bolder;
+    padding: 0.5rem;
+}
+
+.yellow {
+	color: rgba(255, 226, 0, 0.88);
+}
+
+.green {
+	color: green;
+}
+
+.red {
+	color: #D32F2F;
+	text-shadow: none;
+}
+
+.black {
+	color: rgba(29, 29, 29, 0.88);
+	text-shadow: none;
+}
+.orange {
+	color: orange;
+}
+
+.swiper-container {
+	width:100%;
+	height:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.swiper-slide {
+	text-align:center;
+	background:#fff;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:-webkit-flex;
+	display:flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	-webkit-justify-content:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	-webkit-align-items:center;
+	align-items:center;
+	background-position: center top;
+	overflow: hidden;
+}
+
+#slide-1 {
+  	background: url(../img/slide-1.jpg) no-repeat center center;
+	background-size: cover;
+/*rgba(3, 169, 244, 0.23);*/
+}
+
+#slide-2 {
+	background: url(../img/slide-2.jpg) no-repeat center center;
+	background-size: cover;
+/*rgba(17, 47, 7, 0.23);*/
+}
+
+#slide-3 {
+	background: url(../img/slide-27.jpg) no-repeat center center;
+	background-size: cover;
+/*rgba(117, 58, 18, 0.23);*/
+}
+
+#slide-4 {
+	background: url(../img/slide-28.jpg) no-repeat center center;
+	background-size: cover;
+/*rgba(103, 72, 6, 0.3);*/
+}
+
+#slide-5 {
+	background: url(../img/slide-5.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#slide-6 {
+	background: url(../img/slide-17.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#slide-7 {
+	background: url(../img/slide-11.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#slide-8 {
+	background: url(../img/slide-13.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#slide-9 {
+	background: url(../img/slide-9.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#slide-10 {
+	background: url(../img/slide-22.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#slide-11 {
+	background: url(../img/slide-31.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#slide-12 {
+	background: url(../img/slide-34.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#slide-13 {
+	background: url(../img/slide-38.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#slide-14 {
+	background: url(../img/slide-14.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#slide-15 {
+	background: url(../img/slide-15.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#slide-16 {
+	background: url(../img/slide-16.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#blur-1 {
+  background: url(../img/slide-1.jpg) center center;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(5px);
+  position: absolute;
+  
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+#blur-2 {
+  background: url(../img/slide-2.jpg) center center;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(5px);
+  position: absolute;
+  
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+#blur-3 {
+  background: url(../img/slide-27.jpg) center center;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(5px);
+  position: absolute;
+  
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+#blur-4 {
+  background: url(../img/slide-28.jpg) center center;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(5px);
+  position: absolute;
+  
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+#blur-5 {
+  background: url(../img/slide-5.jpg) center center;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(5px);
+  position: absolute;
+  
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+#blur-6 {
+  background: url(../img/slide-17.jpg) center center;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(5px);
+  position: absolute;
+  
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+#blur-7 {
+  background: url(../img/slide-11.jpg) center center;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(5px);
+  position: absolute;
+  
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+#blur-8 {
+  background: url(../img/slide-13.jpg) center center;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(5px);
+  position: absolute;
+  
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+#blur-9 {
+  background: url(../img/slide-9.jpg) center center;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(5px);
+  position: absolute;
+  
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+#blur-10 {
+  background: url(../img/slide-22.jpg) center center;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(5px);
+  position: absolute;
+  
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+#blur-11 {
+  background: url(../img/slide-31.jpg) center center;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(5px);
+  position: absolute;
+  
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+#blur-12 {
+  background: url(../img/slide-34.jpg) center center;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(5px) grayscale(50%);
+  position: absolute;
+  
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+#blur-13 {
+  background: url(../img/slide-38.jpg) center center;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(5px);
+  position: absolute;
+  
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+
+.widget {
+  border-top: 2px solid rgba(255, 255, 255, .5);
+  border-bottom: 2px solid rgba(255, 255, 255, .5);
+  width: 100%;
+  overflow: hidden;
+}
+
+.center {
+  position: relative;
+}
+
+.content {
+	padding: 50px;
+}
