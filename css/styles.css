@@ -483,6 +483,14 @@ caption {
 	.big-title {
 		font-size: 30px;
 	}
+
+	.little-text {
+		font-size: 9px;
+	}
+
+	#header {
+		font-size: 11px;
+	}
 }
 
 /* Small devices (landscape phones, 320px-425px)*/
@@ -494,16 +502,54 @@ caption {
 	.big-title {
 		font-size: 30px;
 	}
+
+	.little-text {
+		font-size: 10px;
+	}
+
+	.my-img {
+	    margin-bottom: -20%;
+	}
+
+	#header {
+		font-size: 11px;
+	}
 }
 
 /* Medium devices (tablets, 425px-650px)*/
 @media (min-width: 425px)  and (max-width: 650px) { 
 	body {
-		font-size: 18px;
+		font-size: 16px;
+	}
+
+	h1 {
+		margin-bottom: 0.5rem;
+	}
+
+	caption {
+	    padding-top: .2rem;
+	    padding-bottom: .25rem;
 	}
 
 	.big-title {
 		font-size: 30px;
+	}
+
+	.little-text {
+		font-size: 10px;
+	}
+
+	.my-img {
+	    margin-bottom: -20%;
+        margin-top: -25%;
+	}
+
+	.padding {
+	    padding: 0.25rem;
+	}
+
+	#header {
+		font-size: 15px;
 	}
 }
 
@@ -516,6 +562,19 @@ caption {
 	.big-title {
 		font-size: 40px;
 	}
+
+	.little-text {
+		font-size: 12px;
+	}
+
+	.my-img {
+	    margin-bottom: -20%;
+        margin-top: -20%;
+	}
+
+	#header {
+		font-size: 20px;
+	}
 }
 
 /* Large devices (desktops, 992px-1024px)*/
@@ -527,6 +586,14 @@ caption {
 	.big-title {
 		font-size: 40px;
 	}
+
+	.little-text {
+		font-size: 14px;
+	}
+
+	#header {
+		font-size: 21px;
+	}
 }
 
 /* Extra large devices (large desktops, 1200px-1440px)*/
@@ -537,6 +604,14 @@ caption {
 
 	.big-title {
 		font-size: 50px;
+	}
+
+	.little-text {
+		font-size: 17px;
+	}
+
+	#header {
+		font-size: 26px;
 	}
 }
 
@@ -552,5 +627,9 @@ caption {
 
 	.little-text {
 		font-size: 21px;
+	}
+
+	#header {
+		font-size: 33px;
 	}
 }
