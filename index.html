@@ -377,15 +377,15 @@
 							    </tr>
 							    <tr>
 							      <td class="bg-orange">до 17 июля</td>
-							      <td class="bg-blue"><del class="black">15000руб.</del> 1 5 0 0 руб. <a class="btn btn-primary" href="http://loveandhealing.autoweboffice.ru/?r=ordering/cart/as1&id=2&clean=true&lg=ru"> Купить </a></td>
+							      <td class="bg-blue"><del class="black">15000руб.</del> 1 5 0 0 руб. <a class="btn btn-primary" data-toggle="modal" data-target="#myModal"> Купить </a></td>
 							    </tr>
 							    <tr>
 							      <td class="bg-orange">до 19 июля</td>
-							      <td class="bg-blue"><del class="black">15000руб.</del> 2 0 0 0 руб. <a class="btn btn-primary" href="http://loveandhealing.autoweboffice.ru/?r=ordering/cart/as1&id=3&clean=true&lg=ru"> Купить </a></td>
+							      <td class="bg-blue"><del class="black">15000руб.</del> 2 0 0 0 руб. <a class="btn btn-primary" data-toggle="modal" data-target="#myModal"> Купить </a></td>
 							    </tr>
 							    <tr>
 							      <td class="bg-orange">20 июля</td>
-							      <td class="bg-blue">15000руб. <a class="btn btn-primary" href="http://loveandhealing.autoweboffice.ru/?r=ordering/cart/as1&id=4&clean=true&lg=ru"> Купить </a></td>
+							      <td class="bg-blue">15000руб. <a class="btn btn-primary" data-toggle="modal" data-target="#myModal"> Купить </a></td>
 							    </tr>
 							  </tbody>
 							</table>
@@ -425,5 +425,36 @@
 		        centeredSlides: true,
 		    });
 		</script>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title center" id="exampleModalLabel">Методы оплаты</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>В комментарии к платежу укажите Ваш email</p>
+
+						<div class="input-group">
+						    <span class="input-group-addon" id="btnGroupAddon">
+						    	<img src="https://upload.wikimedia.org/wikipedia/ru/d/d6/Sberbank.svg" class="img-fluid label">
+					    	</span>
+						    <input type="text" class="form-control" value="4276 8380 4361 0814" aria-describedby="btnGroupAddon" readonly>
+						</div>
+						<div class="input-group">
+						    <span class="input-group-addon" id="btnGroupAddon">
+						    	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PayPal_logo.svg/527px-PayPal_logo.svg.png" class="img-fluid label">
+						    </span>
+						    <input type="text" class="form-control" value="tatti3127@gmail.com"aria-describedby="btnGroupAddon" readonly>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary little-text" data-dismiss="modal">Закрыть</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
