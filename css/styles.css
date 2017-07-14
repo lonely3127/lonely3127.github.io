@@ -181,7 +181,7 @@ caption {
 }
 
 .carousel-indicators .active {
-    background-color: rgba(0, 11, 255, 0.5);
+    background-color: rgb(255, 255, 255);
 }
 
 .white-shadow {
@@ -207,15 +207,36 @@ caption {
 }
 
 .center {
-  position: relative;
+	position: relative;
+	margin-left: auto; 
+	margin-right: auto; 
 }
 
 .content {
 	padding: 2%;
 }
 
+.modal-title {
+	font-size: 24px;
+}
+
+.modal-content {
+	font-size: 18px;
+    color: black;
+    text-shadow: 0 0 0px white;
+}
+
+.modal-footer button {
+	font-size: 14px;
+}
+
+
 #header {
     font-size: 33px;
+}
+
+.label {
+    max-width: 100px;
 }
 
 #slide-1 {
@@ -506,6 +527,10 @@ caption {
 
 	#header {
 		font-size: 11px;
+	}
+
+	.label {
+    max-width: 60px;
 	}
 }
 
