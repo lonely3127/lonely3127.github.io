@@ -12,18 +12,20 @@
 <body>
     <div class="uk-section uk-padding-remove uk-height-viewport">
         <div uk-sticky="show-on-up: true; animation: uk-animation-slide-top; top: 0">
-            <div class="uk-text-center uk-padding-small uk-background-muted uk-visible@m" uk-grid>
+            <div class="uk-text-center uk-padding-super-small uk-background-muted uk-visible@m" uk-grid>
                 <div class="uk-width-expand uk-text-right uk-link-muted">
                     <a href="#" class="uk-margin-medium-left">Тел: +7 495 792 30 49</a>
                     <a href="#" class="uk-margin-medium-left">E-mail: keizerov@mail.ru</a>
-                    <a href="#" class="uk-margin-medium-left language-label-active uk-border-rounded">Rus</a>
-                    <a href="#" class="uk-margin-small-left language-label uk-border-rounded">Eng</a>
+                    <a href="#" class="uk-margin-medium-left language-label-active">Rus</a>
+                    <a href="#" class="uk-margin-small-left language-label uk-margin-remove">Eng</a>
                 </div>
             </div>
-            <nav class="uk-navbar-container uk-text-center uk-navbar uk-padding-small uk-padding-remove-horizontal" uk-navbar align="center">
-                <div class="uk-navbar-center">
+            <nav class="uk-navbar-container uk-text-center uk-navbar uk-padding-remove-horizontal" uk-navbar="offset: 0;delay-hide:100;" align="center">
+                <div>
+                    <a href="index.html"><img src="img/logo/logo_white.svg" class="uk-navbar-item uk-logo uk-margin-small-left logo" uk-svg></a>
+                </div>
+                <div class="uk-navbar-right">
                     <ul class="uk-navbar-nav uk-visible@s">
-                        <li class="uk-visible@m"><a href="index.html"><img src="img/logo/logo_white.svg" uk-svg></a></li>
                         <li>
                             <a href="index.html" class="" aria-expanded="false">
                                 <nobr>О компании</nobr>
@@ -50,10 +52,10 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#">Проекты</a></li>
+                        <li><a href="projects.html">Проекты</a></li>
                         <li><a href="#">Партнеры</a></li>
                         <li><a href="#">Новости</a>
-                            <div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-center" style="left: 259.688px; top: 80px;">
+                            <div class="uk-navbar-dropdown">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                     <li><a href="vacancies.html">Вакансии</a></li>
                                 </ul>
@@ -62,14 +64,12 @@
                         <li><a href="#">Контакты</a></li>
                     </ul>
                     <ul class="uk-navbar-nav uk-hidden@s">
-                        <li><a href="#"><img src="img/logo/logo_white.svg" uk-svg></a></li>
-                        <li><a class="uk-icon-link" uk-icon="icon: menu; ratio: 3" uk-toggle="target: #offcanvas-nav-primary"></a></li>
+                        <li><a class="uk-icon-link uk-margin-left" uk-icon="icon: menu; ratio: 3" uk-toggle="target: #offcanvas-nav-primary"></a></li>
                     </ul>
                 </div>
             </nav>
         </div>
         <div class="uk-cover-container uk-height-viewport">
-            <img src="img/background/bg-2.png" alt="" class="img-bg-opacity" uk-cover>
             <div class="uk-container-expand uk-padding-large uk-text-center">
                 <h3 class="uk-text-bold">Проекты</h3>
                 <div class="uk-padding" id="projects">
@@ -440,7 +440,7 @@
         </div>
     </div>
     <footer class="uk-background-secondary uk-padding-small">
-        <div class="uk-child-width-expand@s uk-text-center uk-text-left@s uk-flex-middle " uk-grid>
+        <div class="uk-child-width-expand@s uk-text-center uk-text-left@s uk-flex-middle" uk-grid>
             <div>
                 <div class="uk-card uk-card-body">
                     <a href="index.html"><img src="img/logo/logo_white.svg" class="uk-position-center" uk-svg></a>
@@ -457,18 +457,21 @@
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
-            <div class="uk-card uk-card-body">
+            <div class="uk-card uk-card-body uk-text-center">
                 <p>117246, Москва, Научный проезд., д.14А, стр.1</p>
                 <p>тел.: +7 495 792 30 49</p>
                 <p>e-mail: keizerov@mail.ru</p>
-                <a href="" uk-icon="icon: facebook; ratio: 3.5"></a>
-                <a href="" uk-icon="icon: youtube; ratio: 3.5"></a>
+                <a href="#" uk-icon="icon: facebook; ratio: 3.5" class="uk-margin-left" id="facebook"></a>
+                <a href="#" uk-icon="icon: youtube; ratio: 3.5" class="uk-margin-left" id="youtube"></a>
+                <a href="#" uk-icon="icon: linkedin; ratio: 3.5" class="uk-margin-left" id="linkedin"></a>
             </div>
         </div>
     </footer>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.nath.co/src/jQuery.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/jQuery.scrollSpeed.js"></script>
     <script src="js/jquery.spincrement.js"></script>
     <script src="js/main.js"></script>
 </body>
