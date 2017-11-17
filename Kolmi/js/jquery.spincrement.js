@@ -64,7 +64,7 @@
 			
 			// Set params FOR THIS ELEM
 			var from = options.from;
-			var to = (options.to != false) ? options.to : parseFloat(obj.html()); // If no to is set, get value from elem itself
+			var to = (options.to != false) ? options.to : parseFloat(obj.attr("data-to")); // If no to is set, get value from elem itself
 			//var to = parseFloat(obj.html()); // If no to is set, get value from elem itself
 			var duration = options.duration;
 			if (options.leeway) {
