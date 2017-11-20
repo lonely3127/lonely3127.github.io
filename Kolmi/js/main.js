@@ -1,7 +1,7 @@
 $(window).load(function() {
     setTimeout(function() {
-        $(".loader").delay(100).fadeOut().remove();
-
+        $(".loader").fadeOut();
+        $("html").fadeIn();
 
         UIkit.util.on('.uk-slideshow', 'itemshown', function() {
             $(".spincrement").spincrement({
@@ -30,6 +30,7 @@ $(window).load(function() {
     }, 2500);
 });
 
+// отрисовка линий svg-лого
 var lineDrawing = anime({
     targets: '#lineDrawing .lines path',
     strokeDashoffset: [anime.setDashoffset, 0],
@@ -40,12 +41,35 @@ var lineDrawing = anime({
     loop: true
 });
 
+// плавный скроллинг
 $(function() {
-
     // Default
     // jQuery.scrollSpeed(100, 800);
 
     // Custom Easing
     jQuery.scrollSpeed(100, 800, 'easeOutCubic');
+});
 
+// слайдер логотипов
+$(document).ready(function() {
+    $('.customer-logos').slick({
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 2
+            }
+        }]
+    });
 });
