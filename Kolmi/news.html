@@ -45,7 +45,7 @@
                             </div>
                         </li>
                         <li><a href="projects.html">Проекты</a></li>
-                        <li><a href="#">Новости</a>
+                        <li><a href="news.html">Новости</a>
                             <div class="uk-navbar-dropdown">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                     <li><a href="vacancies.html">Вакансии</a></li>
@@ -54,7 +54,7 @@
                         </li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
-                    <ul class="uk-navbar-nav uk-hidden@s">
+                    <ul class="uk-navbar-nav uk-hidden@s" id="hamburger-menu">
                         <li><a class="uk-icon-link uk-margin-left" uk-icon="icon: menu; ratio: 3" uk-toggle="target: #offcanvas-nav-primary"></a></li>
                     </ul>
                 </div>
@@ -168,20 +168,41 @@
     <div class="uk-offcanvas-content">
         <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
             <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li class="uk-parent">
-                        <a href="#">Parent</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="#">Sub item</a></li>
-                            <li><a href="#">Sub item</a></li>
-                        </ul>
+                <ul class="uk-nav uk-nav-primary uk-nav-left uk-margin-auto-vertical uk-padding-small uk-text-white" id="mobile-nav" uk-accordion>
+                    <li class="border-line-bottom">
+                        <a href="index.html" class="uk-accordion-title uk-accordion-title-no-plus">
+                            <nobr>О компании</nobr>
+                        </a>
                     </li>
-                    <li class="uk-nav-header">Header</li>
-                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
-                    <li class="uk-nav-divider"></li>
-                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+                    <li class="border-line-bottom">
+                        <a href="activity.html" class="uk-accordion-title uk-accordion-title-no-plus"><span>Направления деятельности</span></a>
+                    </li>
+                    <li class="border-line-bottom">
+                        <a href="#" class="uk-accordion-title"><span>Услуги</span></a>
+                        <div class="uk-accordion-content">
+                            <ul class="uk-nav uk-navbar-dropdown-nav mobile-subnav">
+                                <li><a href="#" class="border-line-left">Проектные работы</a></li>
+                                <li><a href="#" class="border-line-left">Строительство</a></li>
+                                <li><a href="#" class="border-line-left">Монтаж инженерных систем</a></li>
+                                <li><a href="#" class="border-line-left">Автоматизация и диспетчеризация зданий</a></li>
+                                <li><a href="#" class="border-line-left">Управление климатом Climotion</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="border-line-bottom">
+                        <a href="projects.html" class="uk-accordion-title uk-accordion-title-no-plus"><span>Проекты</span></a>
+                    </li>
+                    <li class="border-line-bottom">
+                        <a href="news.html" class="uk-accordion-title"><span>Новости</span></a>
+                        <div class="uk-accordion-content">
+                            <ul class="uk-nav uk-navbar-dropdown-nav mobile-subnav">
+                                <li><a href="vacancies.html" class="border-line-left">Вакансии</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="border-line-bottom">
+                        <a href="#" class="uk-accordion-title uk-accordion-title-no-plus"></span>Контакты<span></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -195,12 +216,11 @@
             </div>
             <div>
                 <ul class="uk-nav uk-nav-default">
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Направления деятельности</a></li>
+                    <li><a href="index.html">О компании</a></li>
+                    <li><a href="activity.html">Направления деятельности</a></li>
                     <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Проекты</a></li>
-                    <li><a href="#">Партнеры</a></li>
-                    <li><a href="#">Новости</a></li>
+                    <li><a href="projects.html">Проекты</a></li>
+                    <li><a href="news.html">Новости</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
@@ -208,9 +228,9 @@
                 <p>117246, Москва, Научный проезд., д.14А, стр.1</p>
                 <p>тел.: +7 495 792 30 49</p>
                 <p>e-mail: keizerov@mail.ru</p>
-                <a href="#" uk-icon="icon: facebook; ratio: 3.5" class="uk-margin-left" id="facebook"></a>
-                <a href="#" uk-icon="icon: youtube; ratio: 3.5" class="uk-margin-left" id="youtube"></a>
-                <a href="#" uk-icon="icon: linkedin; ratio: 3.5" class="uk-margin-left" id="linkedin"></a>
+                <a href="#" uk-icon="icon: facebook; ratio: 2.5" class="orange" id="facebook"></a>
+                <a href="#" uk-icon="icon: youtube; ratio: 2.5" class="uk-margin-left orange" id="youtube"></a>
+                <a href="#" uk-icon="icon: linkedin; ratio: 2.5" class="uk-margin-left orange" id="linkedin"></a>
             </div>
         </div>
     </footer>
