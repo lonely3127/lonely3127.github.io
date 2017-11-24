@@ -172,15 +172,15 @@
     box-shadow: 0 0 0 1px rgba(33, 81, 168, 0.2);
 }
 
-#youtube:hover {
+.youtube:hover {
     color: #cc181e !important;
 }
 
-#facebook:hover {
+.facebook:hover {
     color: #3b5998 !important;
 }
 
-#linkedin:hover {
+.linkedin:hover {
     color: #0077b5 !important;
 }
 
