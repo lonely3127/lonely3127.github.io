@@ -8,6 +8,10 @@
     color: #f7c51e !important;
 }
 
+.black {
+    color: #333333 !important;
+}
+
 .bg-orange {
     background-color: #f7c51e !important;
 }
@@ -22,6 +26,18 @@
 
 .border-line-top {
     border-top: 4px solid #f7c51e;
+}
+
+.uk-tab-left::before {
+    border-left: 4px solid #f7c51e;
+}
+
+.uk-tab-left>*>a {
+    border-right: 4px solid transparent;
+}
+
+.uk-tab>.uk-active>a {
+    border-color: #222222;
 }
 
 .language-label {
@@ -64,11 +80,6 @@
     z-index: 100;
     color: #fff;
     font-weight: 700;
-    transform: skew(-25deg);
-    -webkit-transform: skew(-25deg);
-    -moz-transform: skew(-25deg);
-    -ms-transform: skew(-25deg);
-    -o-transform: skew(-25deg);
     transition: 0.5s;
 }
 
@@ -79,11 +90,6 @@
 
 .uk-navbar-nav>li>a {
     color: #fff;
-    transform: skew(25deg);
-    -webkit-transform: skew(25deg);
-    -moz-transform: skew(25deg);
-    -ms-transform: skew(25deg);
-    -o-transform: skew(25deg);
 }
 
 .uk-navbar-nav>li>a:hover {
@@ -92,7 +98,6 @@
 
 .uk-navbar-dropdown {
     padding: 0;
-    transform: skew(25deg);
 }
 
 .uk-navbar-dropdown-nav>li>a {
@@ -133,24 +138,13 @@
     color: white;
 }
 
-.news-height {
-    max-height: 250px;
+.news-article {
+    border-bottom: 4px solid #e2e2e2;
 }
 
-#hamburger-menu>li {
-    transform: skew(0deg);
-    -webkit-transform: skew(0deg);
-    -moz-transform: skew(0deg);
-    -ms-transform: skew(0deg);
-    -o-transform: skew(0deg);
-}
-
-#hamburger-menu>li>a {
-    transform: skew(0deg);
-    -webkit-transform: skew(0deg);
-    -moz-transform: skew(0deg);
-    -ms-transform: skew(0deg);
-    -o-transform: skew(0deg);
+.img-container {
+    min-height: 225px;
+    max-height: 225px;
 }
 
 #projects>ul>li>a {
@@ -163,13 +157,16 @@
 
 .mobile-subnav>li>a {
     color: white;
-    background-color: #22222200;
+    background-color: #22222200 !important;
     border-top: 1px solid #22222200;
     margin-bottom: 10px;
 }
 
 #permissions a {
-    box-shadow: 0 0 0 1px rgba(33, 81, 168, 0.2);
+    border: 1px solid rgba(33, 81, 168, 0.2);
+    overflow: hidden;
+    border-radius: 5px;
+        box-shadow: 0 28px 50px rgba(0,0,0,.16);
 }
 
 .youtube:hover {
@@ -183,6 +180,7 @@
 .linkedin:hover {
     color: #0077b5 !important;
 }
+
 
 
 
